@@ -1,51 +1,464 @@
 {
   "surf": [
     {
-      "english": "The waves are perfect today.",
-      "spanish": "Las olas están perfectas hoy.",
+      "english": "The waves are small today.",
+      "spanish": "Las olas están pequeñas hoy.",
       "level": 1
     },
     {
-      "english": "If the wind changes direction, the waves will get smaller.",
-      "spanish": "Si el viento cambia de dirección, las olas serán más pequeñas.",
+      "english": "He bought a new surfboard last week.",
+      "spanish": "Compró una tabla de surf nueva la semana pasada.",
+      "level": 1
+    },
+    {
+      "english": "She loves surfing early in the morning.",
+      "spanish": "A ella le encanta surfear temprano en la mañana.",
+      "level": 1
+    },
+    {
+      "english": "The water is warm and the sea is calm.",
+      "spanish": "El agua está tibia y el mar está tranquilo.",
+      "level": 1
+    },
+    {
+      "english": "He practices paddling every day.",
+      "spanish": "Él practica remar todos los días.",
+      "level": 1
+    },
+    {
+      "english": "If the wind changes, the waves will break differently.",
+      "spanish": "Si el viento cambia, las olas romperán de manera diferente.",
       "level": 2
     },
     {
-      "english": "Despite the cold water, he kept surfing until sunset.",
-      "spanish": "A pesar del agua fría, siguió surfeando hasta el atardecer.",
+      "english": "She waxed her board before entering the water.",
+      "spanish": "Ella enceró su tabla antes de entrar al agua.",
+      "level": 2
+    },
+    {
+      "english": "The surf instructor taught him how to duck dive.",
+      "spanish": "El instructor de surf le enseñó a hacer un 'duck dive'.",
+      "level": 2
+    },
+    {
+      "english": "They checked the tide before going surfing.",
+      "spanish": "Ellos revisaron la marea antes de ir a surfear.",
+      "level": 2
+    },
+    {
+      "english": "He prefers reef breaks over beach breaks.",
+      "spanish": "Prefiere las olas de arrecife a las de playa.",
+      "level": 2
+    },
+    {
+      "english": "Despite the strong current, he paddled out successfully.",
+      "spanish": "A pesar de la fuerte corriente, remó hacia afuera con éxito.",
+      "level": 3
+    },
+    {
+      "english": "If he had chosen a larger board, he could have caught more waves.",
+      "spanish": "Si hubiera elegido una tabla más grande, podría haber atrapado más olas.",
+      "level": 3
+    },
+    {
+      "english": "After hours in the water, the sunset painted the ocean orange.",
+      "spanish": "Después de horas en el agua, el atardecer pintó el océano de color naranja.",
+      "level": 3
+    },
+    {
+      "english": "The surfers waited patiently for the perfect set to roll in.",
+      "spanish": "Los surfistas esperaron pacientemente a que llegara el set perfecto.",
+      "level": 3
+    },
+    {
+      "english": "She injured her shoulder while attempting a new maneuver.",
+      "spanish": "Se lesionó el hombro al intentar una nueva maniobra.",
       "level": 3
     }
   ],
   "football": [
     {
-      "english": "He scored a goal in the last minute.",
-      "spanish": "Marcó un gol en el último minuto.",
+      "english": "He kicked the ball into the goal.",
+      "spanish": "Pateó la pelota al arco.",
       "level": 1
     },
     {
-      "english": "The coach decided to change the formation at halftime.",
-      "spanish": "El entrenador decidió cambiar la formación en el entretiempo.",
+      "english": "The game starts at 4 p.m.",
+      "spanish": "El partido empieza a las 4 p.m.",
+      "level": 1
+    },
+    {
+      "english": "They wore red and white uniforms.",
+      "spanish": "Ellos usaron uniformes rojos y blancos.",
+      "level": 1
+    },
+    {
+      "english": "He passed the ball to his teammate.",
+      "spanish": "Pasó la pelota a su compañero.",
+      "level": 1
+    },
+    {
+      "english": "She trains every morning.",
+      "spanish": "Ella entrena todas las mañanas.",
+      "level": 1
+    },
+    {
+      "english": "The goalkeeper saved an incredible shot.",
+      "spanish": "El arquero atajó un tiro increíble.",
       "level": 2
+    },
+    {
+      "english": "They played better in the second half.",
+      "spanish": "Jugaron mejor en el segundo tiempo.",
+      "level": 2
+    },
+    {
+      "english": "The coach decided to make three substitutions.",
+      "spanish": "El entrenador decidió hacer tres sustituciones.",
+      "level": 2
+    },
+    {
+      "english": "He was fouled near the penalty area.",
+      "spanish": "Fue derribado cerca del área penal.",
+      "level": 2
+    },
+    {
+      "english": "The team celebrated after scoring the winning goal.",
+      "spanish": "El equipo celebró después de marcar el gol de la victoria.",
+      "level": 2
+    },
+    {
+      "english": "Even though they lost, the fans cheered loudly.",
+      "spanish": "Aunque perdieron, los fanáticos alentaron con fuerza.",
+      "level": 3
+    },
+    {
+      "english": "He would have scored if the defender hadn’t blocked the shot.",
+      "spanish": "Habría marcado si el defensor no hubiera bloqueado el tiro.",
+      "level": 3
+    },
+    {
+      "english": "The referee reviewed the play using VAR.",
+      "spanish": "El árbitro revisó la jugada usando el VAR.",
+      "level": 3
+    },
+    {
+      "english": "After missing the penalty, he apologized to his teammates.",
+      "spanish": "Después de fallar el penal, se disculpó con sus compañeros.",
+      "level": 3
+    },
+    {
+      "english": "Their strategy focused on quick counterattacks.",
+      "spanish": "Su estrategia se centró en contraataques rápidos.",
+      "level": 3
     }
   ],
   "music": [
     {
-      "english": "She plays the guitar every morning.",
-      "spanish": "Ella toca la guitarra todas las mañanas.",
+      "english": "She sings beautifully.",
+      "spanish": "Ella canta hermosamente.",
       "level": 1
     },
     {
-      "english": "The concert was postponed due to bad weather.",
-      "spanish": "El concierto fue pospuesto debido al mal tiempo.",
+      "english": "He plays the piano every day.",
+      "spanish": "Él toca el piano todos los días.",
+      "level": 1
+    },
+    {
+      "english": "They listen to music together.",
+      "spanish": "Ellos escuchan música juntos.",
+      "level": 1
+    },
+    {
+      "english": "This song is very popular.",
+      "spanish": "Esta canción es muy popular.",
+      "level": 1
+    },
+    {
+      "english": "He likes classical music.",
+      "spanish": "A él le gusta la música clásica.",
+      "level": 1
+    },
+    {
+      "english": "The band released a new album last month.",
+      "spanish": "La banda lanzó un nuevo álbum el mes pasado.",
       "level": 2
+    },
+    {
+      "english": "She learned to play the guitar by herself.",
+      "spanish": "Ella aprendió a tocar la guitarra sola.",
+      "level": 2
+    },
+    {
+      "english": "They performed live in front of thousands of people.",
+      "spanish": "Ellos tocaron en vivo frente a miles de personas.",
+      "level": 2
+    },
+    {
+      "english": "The drummer kept the rhythm perfectly.",
+      "spanish": "El baterista mantuvo el ritmo perfectamente.",
+      "level": 2
+    },
+    {
+      "english": "He forgot the lyrics during the concert.",
+      "spanish": "Olvidó la letra durante el concierto.",
+      "level": 2
+    },
+    {
+      "english": "Even though the show was delayed, the audience stayed excited.",
+      "spanish": "Aunque el espectáculo se retrasó, el público se mantuvo emocionado.",
+      "level": 3
+    },
+    {
+      "english": "The singer would have lost her voice if she hadn’t rested.",
+      "spanish": "La cantante habría perdido la voz si no hubiera descansado.",
+      "level": 3
+    },
+    {
+      "english": "He composed a song inspired by his travels.",
+      "spanish": "Compuso una canción inspirada en sus viajes.",
+      "level": 3
+    },
+    {
+      "english": "The orchestra played with great precision and emotion.",
+      "spanish": "La orquesta tocó con gran precisión y emoción.",
+      "level": 3
+    },
+    {
+      "english": "She recorded her first album in a small studio.",
+      "spanish": "Grabó su primer álbum en un pequeño estudio.",
+      "level": 3
     }
   ],
   "medicine": [
-  {
-    "english": "Doctors help people stay healthy.",
-    "spanish": "Los médicos ayudan a las personas a mantenerse saludables.",
-    "level": 1
-  }
-]
-
+    {
+      "english": "Doctors help sick people.",
+      "spanish": "Los médicos ayudan a las personas enfermas.",
+      "level": 1
+    },
+    {
+      "english": "He takes medicine twice a day.",
+      "spanish": "Toma medicina dos veces al día.",
+      "level": 1
+    },
+    {
+      "english": "The nurse works in the hospital.",
+      "spanish": "La enfermera trabaja en el hospital.",
+      "level": 1
+    },
+    {
+      "english": "Drink water to stay healthy.",
+      "spanish": "Bebe agua para mantenerte saludable.",
+      "level": 1
+    },
+    {
+      "english": "He feels better after resting.",
+      "spanish": "Se siente mejor después de descansar.",
+      "level": 1
+    },
+    {
+      "english": "The doctor examined the patient carefully.",
+      "spanish": "El médico examinó al paciente cuidadosamente.",
+      "level": 2
+    },
+    {
+      "english": "She prescribed antibiotics for the infection.",
+      "spanish": "Ella recetó antibióticos para la infección.",
+      "level": 2
+    },
+    {
+      "english": "He broke his leg while playing soccer.",
+      "spanish": "Se rompió la pierna mientras jugaba al fútbol.",
+      "level": 2
+    },
+    {
+      "english": "The operation was a complete success.",
+      "spanish": "La operación fue un éxito total.",
+      "level": 2
+    },
+    {
+      "english": "They are studying to become surgeons.",
+      "spanish": "Ellos están estudiando para ser cirujanos.",
+      "level": 2
+    },
+    {
+      "english": "If she had gone to the hospital earlier, she would have recovered faster.",
+      "spanish": "Si hubiera ido al hospital antes, se habría recuperado más rápido.",
+      "level": 3
+    },
+    {
+      "english": "Despite the pain, he continued his treatment.",
+      "spanish": "A pesar del dolor, continuó su tratamiento.",
+      "level": 3
+    },
+    {
+      "english": "The vaccine helped reduce the spread of the disease.",
+      "spanish": "La vacuna ayudó a reducir la propagación de la enfermedad.",
+      "level": 3
+    },
+    {
+      "english": "After years of research, they found a new cure.",
+      "spanish": "Después de años de investigación, encontraron una nueva cura.",
+      "level": 3
+    },
+    {
+      "english": "The patient needs to follow a strict diet after surgery.",
+      "spanish": "El paciente debe seguir una dieta estricta después de la cirugía.",
+      "level": 3
+    }
+  ],
+  "programming": [
+    {
+      "english": "He is learning to code in Python.",
+      "spanish": "Está aprendiendo a programar en Python.",
+      "level": 1
+    },
+    {
+      "english": "They write simple programs every day.",
+      "spanish": "Ellos escriben programas simples todos los días.",
+      "level": 1
+    },
+    {
+      "english": "She uses a laptop to practice coding.",
+      "spanish": "Ella usa una laptop para practicar programación.",
+      "level": 1
+    },
+    {
+      "english": "He likes solving logic problems.",
+      "spanish": "Le gusta resolver problemas de lógica.",
+      "level": 1
+    },
+    {
+      "english": "They are studying computer science.",
+      "spanish": "Ellos están estudiando ciencias de la computación.",
+      "level": 1
+    },
+    {
+      "english": "The program didn’t run because of a syntax error.",
+      "spanish": "El programa no se ejecutó por un error de sintaxis.",
+      "level": 2
+    },
+    {
+      "english": "She created a web page using HTML and CSS.",
+      "spanish": "Ella creó una página web usando HTML y CSS.",
+      "level": 2
+    },
+    {
+      "english": "He fixed the bug by changing one line of code.",
+      "spanish": "Arregló el error cambiando una línea de código.",
+      "level": 2
+    },
+    {
+      "english": "They are testing the new API with Postman.",
+      "spanish": "Están probando la nueva API con Postman.",
+      "level": 2
+    },
+    {
+      "english": "He added a new feature to the application.",
+      "spanish": "Agregó una nueva función a la aplicación.",
+      "level": 2
+    },
+    {
+      "english": "If the database is not connected, the server will crash.",
+      "spanish": "Si la base de datos no está conectada, el servidor fallará.",
+      "level": 3
+    },
+    {
+      "english": "After learning Python, she started using Django.",
+      "spanish": "Después de aprender Python, comenzó a usar Django.",
+      "level": 3
+    },
+    {
+      "english": "They developed an AI model to translate languages.",
+      "spanish": "Desarrollaron un modelo de IA para traducir idiomas.",
+      "level": 3
+    },
+    {
+      "english": "He spent hours debugging a complex algorithm.",
+      "spanish": "Pasó horas depurando un algoritmo complejo.",
+      "level": 3
+    },
+    {
+      "english": "The project succeeded thanks to teamwork and good communication.",
+      "spanish": "El proyecto tuvo éxito gracias al trabajo en equipo y la buena comunicación.",
+      "level": 3
+    }
+  ],
+  "cars": [
+    {
+      "english": "He drives a red car.",
+      "spanish": "Conduce un coche rojo.",
+      "level": 1
+    },
+    {
+      "english": "The car is parked outside.",
+      "spanish": "El coche está estacionado afuera.",
+      "level": 1
+    },
+    {
+      "english": "She cleans her car every weekend.",
+      "spanish": "Ella limpia su coche todos los fines de semana.",
+      "level": 1
+    },
+    {
+      "english": "He bought a new tire.",
+      "spanish": "Compró una llanta nueva.",
+      "level": 1
+    },
+    {
+      "english": "They traveled by car to the beach.",
+      "spanish": "Viajaron en coche a la playa.",
+      "level": 1
+    },
+    {
+      "english": "The mechanic repaired the engine.",
+      "spanish": "El mecánico reparó el motor.",
+      "level": 2
+    },
+    {
+      "english": "She changed the oil yesterday.",
+      "spanish": "Ella cambió el aceite ayer.",
+      "level": 2
+    },
+    {
+      "english": "He learned how to drive a manual car.",
+      "spanish": "Aprendió a conducir un coche manual.",
+      "level": 2
+    },
+    {
+      "english": "They checked the brakes before the trip.",
+      "spanish": "Revisaron los frenos antes del viaje.",
+      "level": 2
+    },
+    {
+      "english": "The car needs a new battery.",
+      "spanish": "El coche necesita una batería nueva.",
+      "level": 2
+    },
+    {
+      "english": "If the car had more fuel, they could have continued driving.",
+      "spanish": "Si el coche tuviera más combustible, podrían haber seguido conduciendo.",
+      "level": 3
+    },
+    {
+      "english": "Despite the rain, they arrived on time.",
+      "spanish": "A pesar de la lluvia, llegaron a tiempo.",
+      "level": 3
+    },
+    {
+      "english": "He sold his old car to buy an electric one.",
+      "spanish": "Vendió su coche viejo para comprar uno eléctrico.",
+      "level": 3
+    },
+    {
+      "english": "After checking the GPS, they took a shorter route.",
+      "spanish": "Después de revisar el GPS, tomaron una ruta más corta.",
+      "level": 3
+    },
+    {
+      "english": "The traffic was heavy because of an accident.",
+      "spanish": "El tráfico estaba pesado debido a un accidente.",
+      "level": 3
+    }
+  ]
 }
