@@ -1,0 +1,51 @@
+{
+  "surf": [
+    {
+      "english": "The waves are perfect today.",
+      "spanish": "Las olas están perfectas hoy.",
+      "level": 1
+    },
+    {
+      "english": "If the wind changes direction, the waves will get smaller.",
+      "spanish": "Si el viento cambia de dirección, las olas serán más pequeñas.",
+      "level": 2
+    },
+    {
+      "english": "Despite the cold water, he kept surfing until sunset.",
+      "spanish": "A pesar del agua fría, siguió surfeando hasta el atardecer.",
+      "level": 3
+    }
+  ],
+  "football": [
+    {
+      "english": "He scored a goal in the last minute.",
+      "spanish": "Marcó un gol en el último minuto.",
+      "level": 1
+    },
+    {
+      "english": "The coach decided to change the formation at halftime.",
+      "spanish": "El entrenador decidió cambiar la formación en el entretiempo.",
+      "level": 2
+    }
+  ],
+  "music": [
+    {
+      "english": "She plays the guitar every morning.",
+      "spanish": "Ella toca la guitarra todas las mañanas.",
+      "level": 1
+    },
+    {
+      "english": "The concert was postponed due to bad weather.",
+      "spanish": "El concierto fue pospuesto debido al mal tiempo.",
+      "level": 2
+    }
+  ],
+  "medicine": [
+  {
+    "english": "Doctors help people stay healthy.",
+    "spanish": "Los médicos ayudan a las personas a mantenerse saludables.",
+    "level": 1
+  }
+]
+
+}

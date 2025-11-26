@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aprende Inglés</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🌎 Aprende Inglés con Traducción</h1>
+    <p class="subtitle">Elige un tema, traduce y mejora paso a paso.</p>
+  </header>
+
+  <main class="container">
+    <div class="controls">
+      <div class="select-group">
+        <label for="topic">Tema:</label>
+        <select id="topic">
+          <option value="surf">🏄‍♂️ Surf</option>
+          <option value="football">⚽ Fútbol</option>
+          <option value="music">🎵 Música</option>
+          <option value="medicine">🩺 Medicina</option>
+          <option value="programming">💻 Programación</option>
+          <option value="cars">🚗 Autos</option>
+        </select>
+      </div>
+
+      <div class="select-group">
+        <label for="level">Nivel:</label>
+        <select id="level">
+          <option value="1">1 - Básico</option>
+          <option value="2">2 - Intermedio</option>
+          <option value="3">3 - Avanzado</option>
+        </select>
+      </div>
+
+      <button id="next-btn">➡️ Siguiente frase</button>
+    </div>
+
+    <section class="section">
+      <h2>Texto en inglés:</h2>
+      <p id="english-text" class="english-box"></p>
+    </section>
+
+    <section class="section">
+      <h2>Tu traducción:</h2>
+      <textarea id="user-translation" placeholder="Escribe aquí tu traducción..."></textarea>
+    </section>
+
+    <button id="check-btn" class="check-btn">✅ Evaluar traducción</button>
+    <div id="result"></div>
+  </main>
+
+  <section class="chat-section">
+    <h3>💬 Habla con la IA</h3>
+    <p class="chat-tip">Puedes traducir palabras, frases o hacer preguntas sobre gramática.</p>
+    <textarea id="chat-input" placeholder="Escribe tu duda aquí..."></textarea>
+    <button id="chat-btn">Enviar</button>
+    <div id="chat-response"></div>
+  </section>
+
+  <footer>
+    <p>Desarrollado por Lucas Garmendia © 2025</p>
+  </footer>
+
+  <script src="dictionary.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
