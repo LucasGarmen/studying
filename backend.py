@@ -1,14 +1,14 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
+from fastapi.responses import RedirectResponse
+from dotenv import load_dotenv
 import unicodedata
 import re
 from difflib import SequenceMatcher
 from groq import Groq
 import os
-from dotenv import load_dotenv 
-from fastapi.staticfiles import StaticFiles
-from fastapi.responses import RedirectResponse
 
 # Cargar variables de entorno
 load_dotenv()
@@ -50,7 +50,7 @@ class TranslationRequest(BaseModel):
 class ChatRequest(BaseModel):
     message: str
 
-# Cache global
+# ---- Cache global ----
 word_cache = {}
 
 @app.post("/cache_translation")
@@ -71,11 +71,16 @@ def check_translation(request: TranslationRequest):
         feedback = "🟡 Bastante bien, aunque podrías mejorar."
     else:
         feedback = "❌ Bastante diferente, repasá la frase."
+
     return {
         "score": round(score, 2),
         "feedback": feedback,
         "correct_translation": request.correct_translation
     }
+
+@app.get("/")
+def redirect_to_internal():
+    return RedirectResponse(url="/chat")
 
 @app.post("/chat")
 def chat_with_ai(request: ChatRequest):
@@ -93,5 +98,5 @@ def chat_with_ai(request: ChatRequest):
         print("Error en la API:", e)
         return {"reply": "❌ Error al conectar con la IA. Verifica tu API Key o tu conexión a internet."}
 
-# Servir el frontend
+# ---- Servir frontend ----
 app.mount("/", StaticFiles(directory="frontend", html=True), name="frontend")
