@@ -46,7 +46,17 @@ class TranslationRequest(BaseModel):
     english: str
     user_translation: str
     correct_translation: str  # ✅ nueva línea
+word_cache = {}  # diccionario global
+                                                                                                                                                                                                                                                                                
+@app.post("/cache_translation")
+def cache_translation(word: str, translation: str):
+    word_cache[word.lower()] = translation
+    return {"status": "ok"}
 
+@app.get("/get_translation/{word}")
+def get_translation(word: str):
+    return {"translation": word_cache.get(word.lower(), None)}
+                                                                                                                                                                                                                                                                                                             
 @app.post("/check_translation")
 def check_translation(request: TranslationRequest):
     user = request.user_translation
