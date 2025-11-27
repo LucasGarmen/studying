@@ -7,6 +7,9 @@ from difflib import SequenceMatcher
 from groq import Groq
 import os
 from dotenv import load_dotenv 
+from fastapi.staticfiles import StaticFiles
+
+
 
 
 load_dotenv() 
@@ -14,6 +17,7 @@ load_dotenv()
 client = Groq(api_key=os.getenv("GROQ_API_KEY"))
 
 app = FastAPI()
+
 
 # Permite que el navegador se comunique con el backend
 app.add_middleware(
