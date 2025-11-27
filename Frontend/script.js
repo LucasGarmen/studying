@@ -165,15 +165,16 @@ checkButton.addEventListener("click", async () => {
   result.style.color = "#0077b6";
   result.textContent = "Comprobando...";
 
-  const response = await fetch("/chat", {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({
-      english: currentText.english,
-      correct_translation: currentText.spanish,
-      user_translation: userTranslation.value
-    })
-  });
+const response = await fetch("/check_translation", {
+  method: "POST",
+  headers: { "Content-Type": "application/json" },
+  body: JSON.stringify({
+    english: currentText.english,
+    correct_translation: currentText.spanish,
+    user_translation: userTranslation.value
+  })
+});
+
 
   const data = await response.json();
   result.style.color = data.score > 60 ? "green" : "red";
@@ -193,7 +194,7 @@ chatButton.addEventListener("click", async () => {
 
   chatResponse.textContent = "Pensando...";
 
-  const response = await fetch("/check_translation", {
+  const response = await fetch("/chat", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ message: question })
