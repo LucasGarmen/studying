@@ -30,8 +30,7 @@ app.add_middleware(
 # ---- Normalizar texto ----
 def normalize_text(text: str) -> str:
     text = text.lower()
-    text = ''.join(c for c in unicodedata.normalize('NFD', text)
-                   if unicodedata.category(c) != 'Mn')
+    text = ''.join(c for c in unicodedata.normalize('NFD', text) if unicodedata.category(c) != 'Mn')  # quita acentos
     text = text.replace("ñ", "n")
     text = re.sub(r'[^\w\s]', '', text)
     text = re.sub(r'\s+', ' ', text).strip()
@@ -65,6 +64,7 @@ def get_translation(word: str):
 @app.post("/check_translation")
 def check_translation(request: TranslationRequest):
     score = similarity(request.user_translation, request.correct_translation)
+
     if score > 90:
         feedback = "✅ Excelente traducción."
     elif score > 60:
