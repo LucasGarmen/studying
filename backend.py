@@ -106,3 +106,9 @@ def chat_with_ai(request: ChatRequest):
     except Exception as e:
         print("Error en la API:", e)
         return {"reply": "❌ Error al conectar con la IA. Verifica tu API Key o tu conexión a internet."}
+
+
+
+from fastapi.staticfiles import StaticFiles
+
+app.mount("/", StaticFiles(directory="frontend", html=True), name="frontend")

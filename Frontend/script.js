@@ -99,7 +99,7 @@ async function getWordTranslation(word) {
 
   // 3️⃣ Buscar en backend cache
   try {
-    const resCache = await fetch(`http://127.0.0.1:8000/get_translation/${word}`);
+    const resCache = await fetch(`/get_translation/${word}`);
     const dataCache = await resCache.json();
     if (dataCache.translation) {
       wordCache[word] = dataCache.translation;
@@ -120,7 +120,7 @@ async function getWordTranslation(word) {
     localStorage.setItem("wordCache", JSON.stringify(wordCache));
 
     // Guardar también en backend
-    fetch("http://127.0.0.1:8000/cache_translation", {
+    fetch("/cache_translation", {
       method: "POST",
       headers: {"Content-Type": "application/json"},
       body: JSON.stringify({word, translation})
@@ -165,7 +165,7 @@ checkButton.addEventListener("click", async () => {
   result.style.color = "#0077b6";
   result.textContent = "Comprobando...";
 
-  const response = await fetch("http://127.0.0.1:8000/check_translation", {
+  const response = await fetch("/chat", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
@@ -193,7 +193,7 @@ chatButton.addEventListener("click", async () => {
 
   chatResponse.textContent = "Pensando...";
 
-  const response = await fetch("http://127.0.0.1:8000/chat", {
+  const response = await fetch("/check_translation", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ message: question })
