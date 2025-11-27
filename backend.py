@@ -99,4 +99,4 @@ def chat_with_ai(request: ChatRequest):
         return {"reply": "❌ Error al conectar con la IA. Verifica tu API Key o tu conexión a internet."}
 
 # ---- Servir frontend ----
-app.mount("/", StaticFiles(directory="frontend", html=True), name="frontend")
+app.mount("/static", StaticFiles(directory="frontend", html=True), name="frontend")
