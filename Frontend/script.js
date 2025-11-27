@@ -9,7 +9,7 @@ const topicSelect = document.getElementById("topic");
 let texts = {};
 nextButton.disabled = true;
 
-const wordCache = JSON.parse(localStorage.getItem("wordCache") || "{}"); // cache local
+const wordCache = JSON.parse(localStorage.getItem("wordCache") || "{}");
 let localDictionary = {};
 let currentText = null;
 
@@ -124,7 +124,7 @@ async function getWordTranslation(word) {
       method: "POST",
       headers: {"Content-Type": "application/json"},
       body: JSON.stringify({word, translation})
-    }).catch(() => {}); // no romper si falla
+    }).catch(() => {}); 
 
     return translation;
   } catch {
@@ -165,16 +165,15 @@ checkButton.addEventListener("click", async () => {
   result.style.color = "#0077b6";
   result.textContent = "Comprobando...";
 
-const response = await fetch("/check_translation", {
-  method: "POST",
-  headers: { "Content-Type": "application/json" },
-  body: JSON.stringify({
-    english: currentText.english,
-    correct_translation: currentText.spanish,
-    user_translation: userTranslation.value
-  })
-});
-
+  const response = await fetch("/check_translation", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      english: currentText.english,
+      correct_translation: currentText.spanish,
+      user_translation: userTranslation.value
+    })
+  });
 
   const data = await response.json();
   result.style.color = data.score > 60 ? "green" : "red";
