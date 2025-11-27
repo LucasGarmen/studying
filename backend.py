@@ -8,6 +8,8 @@ from groq import Groq
 import os
 from dotenv import load_dotenv 
 from fastapi.staticfiles import StaticFiles
+from fastapi.responses import RedirectResponse
+
 
 
 
@@ -83,6 +85,10 @@ def check_translation(request: TranslationRequest):
     
 class ChatRequest(BaseModel):
     message: str
+
+@app.get("/")
+def redirect_to_internal():
+    return RedirectResponse(url="/chat")
 
 
 @app.post("/chat")
