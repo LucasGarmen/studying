@@ -10,9 +10,12 @@ from dotenv import load_dotenv
 from fastapi.staticfiles import StaticFiles
 from fastapi.responses import RedirectResponse
 
+# Cargar variables de entorno
 load_dotenv()
 
+# Cliente de Groq
 client = Groq(api_key=os.getenv("GROQ_API_KEY"))
+
 app = FastAPI()
 
 # Permitir conexión desde el frontend
@@ -47,6 +50,7 @@ class TranslationRequest(BaseModel):
 class ChatRequest(BaseModel):
     message: str
 
+# Cache global
 word_cache = {}
 
 @app.post("/cache_translation")
